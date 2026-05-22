@@ -1,4 +1,4 @@
-# Assignment 3 — Full-Stack MERN Mini App
+Full-Stack MERN Mini App
 
 A complete MERN application — **Notes App** — where a React frontend communicates with an Express backend to **display, add, and delete** notes.
 
