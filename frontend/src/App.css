@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #f5f5f7;
+  color: #1d1d1f;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: #6e6e73;
+  font-size: 0.9rem;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.note-form input,
+.note-form textarea {
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #d2d2d7;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.note-form input:focus,
+.note-form textarea:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+.note-form button {
+  padding: 0.7rem 1rem;
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.note-form button:hover:not(:disabled) {
+  background: #0052a3;
+}
+
+.note-form button:disabled {
+  background: #a0a0a5;
+  cursor: not-allowed;
+}
+
+.alert {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.alert.error {
+  background: #ffe5e5;
+  color: #c92a2a;
+  border: 1px solid #ffcccc;
+}
+
+.status {
+  text-align: center;
+  padding: 2rem;
+  color: #6e6e73;
+  font-size: 0.95rem;
+}
+
+.note-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.note-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: #fff;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.note-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.note-body h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+}
+
+.note-body p {
+  color: #3a3a3c;
+  font-size: 0.92rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin-bottom: 0.5rem;
+}
+
+.note-body small {
+  color: #8e8e93;
+  font-size: 0.78rem;
+}
+
+.delete-btn {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: #fff0f0;
+  color: #c92a2a;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.15s ease;
+}
+
+.delete-btn:hover {
+  background: #ffd6d6;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2.5rem;
+  color: #8e8e93;
+  font-size: 0.78rem;
+}
